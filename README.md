@@ -1,6 +1,6 @@
 # Project synch
 
-Synchronize a Rails project structure.
+Synchronize a Rails project structure at a more fine-grained level.
 
 The success of any large project is only as good as its structural parts that should be aligned at all levels. Traditionally most Rails projects have lacked a common structure across views, locale files, css/sass files and so on. Rails ans similar frameworks have so far limited this enforced structure approach to restfulness (model/controller/view files) and lately css and coffe/javascript files for each generated view. 
 
