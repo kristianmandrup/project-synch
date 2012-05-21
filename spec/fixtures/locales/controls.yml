@@ -1,0 +1,17 @@
+en:
+  button:
+    confirm: confirm
+    cancel: cancel
+    signup: sign up
+    logout: log out
+    save: save
+  selector:
+    team:
+      no_choice: choose team
+      option1: team 1
+      option2: team 2
+  selector:
+    combination:
+      no_choice: choose combination
+      option1: combination 1
+      option2: combination 2

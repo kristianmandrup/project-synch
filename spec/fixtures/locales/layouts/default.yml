@@ -1,0 +1,11 @@
+en:
+  layout:
+    default:
+      header_bar:
+        logo:
+          txt: Friendly Rent
+        links: 
+      footer_bar:
+        copyright: # special (use project name by default)
+          txt: Copyright (c) Friendly Rent
+        links:

@@ -1,0 +1,34 @@
+project:
+  name: Friendly rent
+  overlays:
+    invite:
+  pages:
+    pre_signup:
+      layout: default
+      left:
+        video:
+          repeat: video # special: call partial with collection
+      right:
+        content:
+        registration:
+    team:
+      intro:
+      manage:
+      invite:
+    combination:
+      selector: combination
+      repeat: role_model # special: call partial with collection
+    prizes:
+  layouts:
+    default:
+      header_bar:
+        logo:
+          txt: Friendly Rent
+        links:
+      top:
+        selector: team
+      footer_bar:
+        copyright:
+        links:
+  mails:
+    reminder:
