@@ -1,0 +1,6 @@
+project:
+  team_form:
+    name_selector:
+      label: team name
+      options:
+        no_choice: choose team # override default

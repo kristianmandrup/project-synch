@@ -1,3 +1,8 @@
 en:
   page:
     combination:
+      selector:
+        role:
+          no_choice: choose role
+          option1: role 1
+          option2: role 2

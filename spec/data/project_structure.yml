@@ -1,5 +1,9 @@
 project:
   name: Friendly rent
+  meta:
+    formbuilder: formtastic
+    view_markup: haml
+    css_style: sass
   overlays:
     invite:
   pages:
@@ -7,7 +11,7 @@ project:
       layout: default
       left:
         video:
-          repeat: video # special: call partial with collection
+          REF: video!
       right:
         content:
         registration:
@@ -16,8 +20,10 @@ project:
       manage:
       invite:
     combination:
-      selector: combination
-      repeat: role_model # special: call partial with collection
+      role_model:
+        REF:
+          name: combination_form
+          type: repeat # special: call partial (default name: role_model) with collection
     prizes:
   layouts:
     default:
@@ -26,9 +32,9 @@ project:
           txt: Friendly Rent
         links:
       top:
-        selector: team
+        REF: team_form
       footer_bar:
-        copyright:
+        copyright: # special (use project name or title)
         links:
   mails:
     reminder:

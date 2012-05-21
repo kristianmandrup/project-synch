@@ -1,0 +1,8 @@
+project:
+  combination_form: # special (ends with _form)
+    name_input: 
+      label: name # special
+    combination_selector: 
+      label: combination # special
+      options:
+        no_choice: choose combination # default
