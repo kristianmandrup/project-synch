@@ -24,6 +24,10 @@ In order to add to the skeleton you can run the generator with the '--mode force
 
 The design philosophies come from project experience.
 
+### Configuration
+
+You can configure how fine-grained the skeleton structure will be built. For small projects it doesn't make sense to split up the locales and views into too fine-grained a folder struture, whereas for larger projects it is critical, in order to enable quickly dismantling a part of a page or to enable multiple developers to work on smaller files in order to minimize conflicts.
+
 ### Views
 
 Views should be structured as follows:
@@ -64,7 +68,7 @@ Views should be structured as follows:
 * errors folder
   * file for each error screen 
 
-## Locales
+### Locales
 
 * pages 
   * page folder for each page
@@ -83,7 +87,7 @@ Top level yml files:
 * facebook (general faceook messages)
 * messages (general messages, fx flash)
 
-## CSS/SASS files
+### CSS/SASS files
 
 * layouts
  * file for each layout
@@ -99,6 +103,27 @@ Top level files:
 * errors file
 * policies file
 * conditions file
+
+## Integrations
+
+### i18n-docs
+
+The locale files should be structured to play nice with the _i18n-docs_ gem. The structure will thus be as follows:
+
+`config/locales/en/` for all english locale files/folders.
+
+i18n-docs expects to export a single google docs file per yml file. With the subdivision of locale files envisioned, there will be way too many docs exported. For i18n-docs integration, there is a need for a mechanism to aggregate a docs file for each page:
+
+* one doc per page (or page groups)
+* one doc for all overlays
+* one doc for all mails
+* one doc for all errors
+* one doc for conditions and policies
+
+The `project-structure.yml` file should enable this aggregation/split functionality for _i18n-docs_. 
+The configuration file can be used to set the export detail level for each type of artifact (see fx `config/project-synch/medium.yml` the default config for medium size/complexity projects.
+
+The `project-sync` gem will provide a nice extension for _i18n-docs_ without monkey-patching by ensuring that _i18n-docs_ has some useful extension hooks.
 
 ## Contributing to project-synch
  

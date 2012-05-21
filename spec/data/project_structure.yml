@@ -6,35 +6,41 @@ project:
     css_style: sass
   overlays:
     invite:
-  pages:
-    pre_signup:
-      layout: default
-      left:
-        video:
-          REF: video!
-      right:
-        content:
-        registration:
-    team:
-      intro:
-      manage:
-      invite:
-    combination:
-      role_model:
-        REF:
-          name: combination_form
-          type: repeat # special: call partial (default name: role_model) with collection
-    prizes:
-  layouts:
+  namespace:
+    admin:
+      pages:
+        statistics:
+          dashboard:
     default:
-      header_bar:
-        logo:
-          txt: Friendly Rent
-        links:
-      top:
-        REF: team_form
-      footer_bar:
-        copyright: # special (use project name or title)
-        links:
-  mails:
-    reminder:
+      pages:
+        pre_signup:
+          layout: default
+          left:
+            video:
+              REF: video!
+          right:
+            content:
+            registration:
+        team:
+          intro:
+          manage:
+          invite:
+        combination:
+          role_model:
+            REF:
+              name: combination_form
+              type: repeat # special: call partial (default name: role_model) with collection
+        prizes:
+      layouts:
+        default:
+          header_bar:
+            logo:
+              txt: Friendly Rent
+            links:
+          top:
+            REF: team_form
+          footer_bar:
+            copyright: # special (use project name or title)
+            links:
+      mails:
+        reminder:

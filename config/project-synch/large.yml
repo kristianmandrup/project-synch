@@ -1,0 +1,12 @@
+project_synch:
+  <<: *medium_synch
+  pref:
+    views:
+      max_lvs: 4
+    locales:
+      facebook: folder
+    docs:
+      namespaces: folder # for fx admin and default ns
+
+
+

@@ -1,0 +1,2 @@
+class Sass
+end

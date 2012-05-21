@@ -1,0 +1,20 @@
+project_synch: &medium_synch
+  <<: *simple_synch
+  pref:
+    locales:
+      overlays: folder
+      errors: folder
+      messages: folder
+      policies: folder
+      conditions: folder
+    docs:
+      pages: file
+      mails: file
+      overlays: file
+      errors: sheet
+      conditions: sheet
+      policies: sheet
+      files:
+        extra: ['conditions', 'policies', 'errors']
+
+

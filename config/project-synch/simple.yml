@@ -1,0 +1,23 @@
+project_synch: &simple_synch
+  pref:
+    views:
+      max_lvs: 3
+    locales:
+      overlays: file
+      errors: file
+      messages: file
+      policies: file
+      conditions: file
+      facebook: file
+    stylesheets:
+      errors: file
+      messages: file
+    docs:
+      pages: file
+      mails: file
+      overlays: sheet
+      errors: sheet
+      conditions: sheet
+      policies: sheet
+      files:
+        extra: ['conditions', 'policies', 'errors', 'overlays']
