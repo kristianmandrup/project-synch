@@ -4,14 +4,14 @@ project:
     formbuilder: formtastic
     view_markup: haml
     css_style: sass
-  overlays:
-    invite:
-  namespace:
+  namespaces:
     admin:
       pages:
         statistics:
           dashboard:
     default:
+      overlays:
+        invite:
       pages:
         pre_signup:
           layout: default

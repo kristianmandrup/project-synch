@@ -1,5 +1,7 @@
 source :rubygems
 
+gem 'rails_config_loader'
+
 group :development do
   gem "rspec",    ">= 2.9.0"
   gem "rdoc",     ">= 3.12"
